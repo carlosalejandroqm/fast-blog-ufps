@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { getAllFilesMetadata } from "../lib/mdx";
+import { getAllFilesMetadata } from "./lib/mdx";
 import styles from "../styles/Home.module.css";
 import Icon from "./../public/assets/img/logo_ufps.png";
 
-import Aboutme from "./../components/Categories/Aboutme";
-import Silux from "./../components/Categories/SoftwareArquitecture";
-import ReactCategorie from "./../components/Categories/ReactCategorie";
+import Aboutme from "./components/Categories/Aboutme";
+import Silux from "./components/Categories/SoftwareArquitecture";
+import ReactCategorie from "./components/Categories/ReactCategorie";
 
 export default function Home({ posts }) {
   const aboutme = posts.filter((post) => post.categorie === "about me");
