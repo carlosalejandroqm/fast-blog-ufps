@@ -1,0 +1,43 @@
+[debug] [2022-12-22T05:51:52.985Z] ----------------------------------------------------------------------
+[debug] [2022-12-22T05:51:52.986Z] Command:       /opt/homebrew/Cellar/node/18.3.0/bin/node /opt/homebrew/bin/firebase emulators:start
+[debug] [2022-12-22T05:51:52.987Z] CLI Version:   11.19.0
+[debug] [2022-12-22T05:51:52.987Z] Platform:      darwin
+[debug] [2022-12-22T05:51:52.987Z] Node Version:  v18.3.0
+[debug] [2022-12-22T05:51:52.989Z] Time:          Thu Dec 22 2022 00:51:52 GMT-0500 (hora estándar de Colombia)
+[debug] [2022-12-22T05:51:52.989Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-22T05:51:53.072Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-22T05:51:53.072Z] > authorizing via signed-in user (carlosalejandroqm@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2022-12-22T05:51:53.377Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-22T05:51:53.377Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-22T05:51:53.377Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-22T05:51:53.384Z] [hub] writing locator at /var/folders/d6/nnshd_3149l_n3jgyd3741v40000gp/T/hub-fast-blog-ufps.json
+[debug] [2022-12-22T05:51:53.392Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fast-blog-ufps [none]
+[debug] [2022-12-22T05:51:53.901Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fast-blog-ufps 200
+[debug] [2022-12-22T05:51:53.901Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fast-blog-ufps {"projectId":"fast-blog-ufps","projectNumber":"1078418562551","displayName":"fast-blog-ufps","name":"projects/fast-blog-ufps","resources":{"hostingSite":"fast-blog-ufps"},"state":"ACTIVE","etag":"1_d0fe7df8-18a9-490e-b4de-c16971a529a0"}
+[debug] [2022-12-22T05:51:57.602Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fast-blog-ufps/sites 
+[debug] [2022-12-22T05:51:58.555Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fast-blog-ufps/sites 200
+[debug] [2022-12-22T05:51:58.555Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fast-blog-ufps/sites {"sites":[{"name":"projects/fast-blog-ufps/sites/fast-blog-ufps","defaultUrl":"https://fast-blog-ufps.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-22T05:51:58.556Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fast-blog-ufps/webApps/-/config [none]
+[debug] [2022-12-22T05:51:59.028Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fast-blog-ufps/webApps/-/config 200
+[debug] [2022-12-22T05:51:59.028Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fast-blog-ufps/webApps/-/config {"projectId":"fast-blog-ufps","storageBucket":"fast-blog-ufps.appspot.com","apiKey":"AIzaSyA72LAH7A05Ac4ikr6t4Iq2iownvHQJQ6g","authDomain":"fast-blog-ufps.firebaseapp.com","messagingSenderId":"1078418562551"}
+[info] i  hosting[fast-blog-ufps]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[fast-blog-ufps]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [22/Dec/2022:05:52:47 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Dec/2022:05:52:47 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\""}}
